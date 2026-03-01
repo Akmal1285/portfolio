@@ -3,74 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akmal Iman | IT Portfolio</title>
+    <title>Akmal Iman | IT Operations & Governance</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans">
+<body class="bg-[#0f172a] text-slate-200 font-sans scroll-smooth">
 
-    <header class="py-20 px-6 text-center bg-gradient-to-b from-slate-800 to-slate-900">
-        <h1 class="text-5xl font-bold text-blue-400 mb-4">Muhammad Akmal Iman</h1>
-        <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-8">
-            IT Graduate specializing in <span class="text-white">IT Operations & Governance</span>. 
-            Standardizing SOPs, optimizing procurement, and managing cloud infrastructure.
-        </p>
-        <div class="flex justify-center gap-4">
-            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">View Projects</a>
-            <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman" target="_blank" class="border border-slate-600 hover:bg-slate-800 px-6 py-3 rounded-lg font-semibold transition">Full Repository</a>
+    <nav class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-slate-800 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tight text-blue-400">AKMAL IMAN</span>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#governance" class="hover:text-blue-400 transition">Governance</a>
+                <a href="#labs" class="hover:text-blue-400 transition">Technical Labs</a>
+                <a href="https://github.com/Akmal1285" target="_blank" class="bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-500 transition">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-blue-500 font-bold tracking-widest uppercase text-sm italic">IT Support & Operations Graduate</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mt-4 mb-6 leading-tight">Bridging Tech with <span class="text-blue-400">Business Strategy.</span></h1>
+            <p class="text-lg text-slate-400 mb-10 leading-relaxed">
+                Based in Kedah, Malaysia. Specializing in IT Governance, Cloud (Azure), and System Administration. I focus on cost-control, standardized SOPs, and secure infrastructure.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-full border border-slate-700">
+                    <i class="fab fa-microsoft text-blue-400"></i>
+                    <span class="text-xs font-semibold uppercase">MS-900 Certified</span>
+                </div>
+                <div class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-full border border-slate-700">
+                    <i class="fab fa-google text-blue-400"></i>
+                    <span class="text-xs font-semibold uppercase">Google IT Support Professional</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="projects" class="py-16 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-10 border-l-4 border-blue-500 pl-4">Strategic IT Operations</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition flex flex-col">
-                <i class="fas fa-file-contract text-3xl text-blue-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">IT Governance & SOPs</h3>
-                <p class="text-slate-400 text-sm mb-6 flex-grow">Standardized frameworks for onboarding, security policies, and operational efficiency.</p>
-                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/Documentation" target="_blank" class="bg-slate-700 text-center py-2 rounded font-bold hover:bg-blue-600 transition">Open Documentation</a>
+    <section id="skills" class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700 text-center">
+                <i class="fas fa-server text-blue-400 text-3xl mb-4"></i>
+                <h4 class="font-bold text-white">Administration</h4>
+                <p class="text-xs text-slate-500 mt-2">Active Directory, Windows Server, Linux CLI</p>
             </div>
-
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition flex flex-col">
-                <i class="fas fa-ticket-alt text-3xl text-blue-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Ticketing & Asset Systems</h3>
-                <p class="text-slate-400 text-sm mb-6 flex-grow">Custom IT helpdesk solutions using Google Workspace and MySQL for ticket management.</p>
-                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/IT-Helpdesk-Ticketing-System" target="_blank" class="bg-slate-700 text-center py-2 rounded font-bold hover:bg-blue-600 transition">View System</a>
+            <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700 text-center">
+                <i class="fas fa-cloud text-blue-400 text-3xl mb-4"></i>
+                <h4 class="font-bold text-white">Cloud</h4>
+                <p class="text-xs text-slate-500 mt-2">Azure AD, MFA, Monitoring, File Share</p>
             </div>
-
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition flex flex-col">
-                <i class="fas fa-cloud text-3xl text-blue-400 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Azure Cloud Labs</h3>
-                <p class="text-slate-400 text-sm mb-6 flex-grow">Implementation of Azure AD, MFA, and automated monitoring for cloud environments.</p>
-                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/Azure-ad-mfa-lab" target="_blank" class="bg-slate-700 text-center py-2 rounded font-bold hover:bg-blue-600 transition">View Cloud Labs</a>
+            <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700 text-center">
+                <i class="fas fa-shield-alt text-blue-400 text-3xl mb-4"></i>
+                <h4 class="font-bold text-white">Security</h4>
+                <p class="text-xs text-slate-500 mt-2">GPO Hardening, BitLocker, Firewall</p>
+            </div>
+            <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700 text-center">
+                <i class="fas fa-terminal text-blue-400 text-3xl mb-4"></i>
+                <h4 class="font-bold text-white">Automation</h4>
+                <p class="text-xs text-slate-500 mt-2">PowerShell Scripting, SQL, Ticketing</p>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-slate-800/50 px-6">
+    <section id="governance" class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-2">Strategic IT Operations</h2>
+        <p class="text-slate-400 mb-10">Featured projects focusing on the business side of IT.</p>
+        
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="group bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <h3 class="text-xl font-bold text-white mb-3">New Hire Onboarding SOP</h3>
+                <p class="text-slate-400 text-sm mb-6">Standardized framework for device provisioning and identity management for 100% security compliance.</p>
+                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/blob/main/Documentation/IT-Onboarding-SOP.md" target="_blank" class="text-blue-400 font-bold text-sm">Open File →</a>
+            </div>
+
+            <div class="group bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <h3 class="text-xl font-bold text-white mb-3">Hardware & License Audit</h3>
+                <p class="text-slate-400 text-sm mb-6">Procurement study evaluating Dell/Lenovo/HP and M365 licensing to optimize company OpEx.</p>
+                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/blob/main/Documentation/Hardware-Comparison-Report.md" target="_blank" class="text-blue-400 font-bold text-sm">Open File →</a>
+            </div>
+
+            <div class="group bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <h3 class="text-xl font-bold text-white mb-3">ISP Vendor Comparison</h3>
+                <p class="text-slate-400 text-sm mb-6">Market comparison of Malaysian Business ISPs (TM, TIME, Maxis) focusing on SLA and budgeting.</p>
+                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/blob/main/Documentation/ISP-Vendor-Comparison.md" target="_blank" class="text-blue-400 font-bold text-sm">Open File →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="labs" class="py-20 bg-slate-900/50 border-y border-slate-800 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl font-bold mb-8 text-center text-slate-400 italic">Explore Technical Labs</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/active_directory" target="_blank" class="p-4 bg-slate-900 rounded-lg border border-slate-700 hover:border-blue-400 transition">
-                    <p class="font-bold">Active Directory</p>
-                </a>
-                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/powershell-local-user-automation" target="_blank" class="p-4 bg-slate-900 rounded-lg border border-slate-700 hover:border-blue-400 transition">
-                    <p class="font-bold">PowerShell</p>
-                </a>
-                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/linux-system-maintenance-and-health-check" target="_blank" class="p-4 bg-slate-900 rounded-lg border border-slate-700 hover:border-blue-400 transition">
-                    <p class="font-bold">Linux CLI</p>
-                </a>
-                <a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/networking" target="_blank" class="p-4 bg-slate-900 rounded-lg border border-slate-700 hover:border-blue-400 transition">
-                    <p class="font-bold">Networking</p>
-                </a>
+            <h2 class="text-3xl font-bold text-white mb-10 text-center">Technical Lab Repository</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h4 class="text-blue-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-cloud"></i> Azure Cloud</h4>
+                    <ul class="text-sm space-y-3 text-slate-400">
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/Azure-ad-mfa-lab" class="hover:text-white transition">• Azure AD User Management & MFA</a></li>
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/Azure-file-share-lab" class="hover:text-white transition">• Azure File Share & Backup</a></li>
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/Azure-monitor-cpu-lab" class="hover:text-white transition">• Azure Monitor: CPU Alerting</a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h4 class="text-blue-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-desktop"></i> SysAdmin & Security</h4>
+                    <ul class="text-sm space-y-3 text-slate-400">
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/active_directory" class="hover:text-white transition">• Active Directory Domain Join</a></li>
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/windows10-localgpo-lab" class="hover:text-white transition">• Group Policy Hardening</a></li>
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/windows10-security-hardening" class="hover:text-white transition">• BitLocker & OS Security</a></li>
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/linux-system-maintenance-and-health-check" class="hover:text-white transition">• Linux System Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h4 class="text-blue-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-tools"></i> Automation & Tools</h4>
+                    <ul class="text-sm space-y-3 text-slate-400">
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/powershell-local-user-automation" class="hover:text-white transition">• PowerShell Automation</a></li>
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/IT-Helpdesk-Ticketing-System" class="hover:text-white transition">• No-Code Ticketing System</a></li>
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/MySQL-ticket-case-study" class="hover:text-white transition">• MySQL Helpdesk Workflow</a></li>
+                        <li><a href="https://github.com/Akmal1285/it-support-portfolio-akmaliman/tree/main/small-office-network-setup" class="hover:text-white transition">• Cisco Network Design</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-slate-500 text-sm">
-        <p>© 2026 Muhammad Akmal Iman | Kedah, Malaysia</p>
-    </section>
+    <footer class="py-20 text-center px-6">
+        <h2 class="text-2xl font-bold text-white mb-6">Let's Connect</h2>
+        <div class="flex justify-center gap-6 mb-10">
+            <a href="mailto:YOUR_EMAIL@HERE.COM" class="text-slate-400 hover:text-blue-400 text-2xl transition"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Akmal1285" class="text-slate-400 hover:text-blue-400 text-2xl transition"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-slate-400 hover:text-blue-400 text-2xl transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="text-slate-600 text-xs tracking-widest uppercase">© 2026 Muhammad Akmal Iman • Malaysia</p>
+    </footer>
 
 </body>
 </html>
